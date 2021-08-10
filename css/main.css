@@ -1,0 +1,59 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* General styles */
+body {
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  border: 2px solid lime;
+}
+header {
+  background-color: darkorange;
+}
+main {
+  background-color: darkred;
+}
+footer {
+  background-color: darkslategrey;
+}
+
+p {
+  margin-top: 30px;
+}
+
+/* Mobile styles */
+@media only screen and (max-width: 425px) {
+  /* styles for mobile phones */
+  header {
+    height: 50px;
+  }
+  footer {
+    height: 50px;
+  }
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 426px) and(max-width: 768px) {
+  header {
+    height: 100px;
+  }
+  footer {
+    height: 100px;
+  }
+}
+
+/* Desktop styles */
+@media only screen and(min-width: 769px) {
+  header {
+    height: 200px;
+  }
+  footer {
+    height: 200px;
+  }
+}
